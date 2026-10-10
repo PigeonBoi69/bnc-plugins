@@ -1,0 +1,47 @@
+/* @bnc-plugin
+{
+  "id": "sample.sparkles",
+  "name": "Sparkles (sample)",
+  "version": "1.0.0",
+  "author": "BNC Ambient",
+  "type": "visualizer",
+  "apiVersion": 1,
+  "description": "Small glowing sparks float up the screen, and more of them appear when the bass hits. A basic example plugin."
+}
+*/
+
+const sparks = [];
+
+register({
+  draw(ctx, f) {
+    // louder bass = more new sparks (and a trickle while music is playing)
+    const spawn = Math.floor(f.bass * 6 * f.intensity) + (f.playing ? 1 : 0);
+    for (let i = 0; i < spawn && sparks.length < 400; i++) {
+      sparks.push({
+        x: Math.random() * f.width,
+        y: f.height + 10,
+        speed: f.vh * (12 + Math.random() * 25 + f.bass * 40), // pixels per second
+        drift: (Math.random() - 0.5) * f.vh * 4,
+        size: f.vh * (0.2 + Math.random() * 0.5),
+        life: 1,
+      });
+    }
+
+    for (let i = sparks.length - 1; i >= 0; i--) {
+      const s = sparks[i];
+      s.y -= s.speed * f.dt;
+      s.x += s.drift * f.dt;
+      s.life -= f.dt * 0.25;
+      if (s.life <= 0 || s.y < -20) {
+        sparks.splice(i, 1);
+        continue;
+      }
+      ctx.fillStyle = f.rgba(Math.min(1, s.life) * 0.9);
+      ctx.shadowColor = f.rgba(0.9);
+      ctx.shadowBlur = s.size * 4;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  },
+});

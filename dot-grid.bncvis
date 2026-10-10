@@ -1,0 +1,35 @@
+/* @bnc-plugin
+{
+  "id": "sample.dotgrid",
+  "name": "Dot Grid (sample)",
+  "version": "1.0.0",
+  "author": "BNC Ambient",
+  "type": "visualizer",
+  "apiVersion": 1,
+  "description": "A level meter made of dots: each column lights up as high as its part of the music is loud. A basic example plugin."
+}
+*/
+
+const COLUMNS = 32;
+const ROWS = 12;
+
+register({
+  draw(ctx, f) {
+    const levels = f.bands(COLUMNS);          // 32 smoothed levels, 0 to 1, bass on the left
+    const spacing = (f.width * 0.8) / COLUMNS;
+    const left = f.width * 0.1;
+    const rowGap = f.vh * 3.2;
+    const floor = f.height - f.vh * 6;
+
+    for (let c = 0; c < COLUMNS; c++) {
+      const lit = Math.min(ROWS, Math.round(levels[c] * f.intensity * ROWS * 1.4));
+      for (let r = 0; r < ROWS; r++) {
+        const on = r < lit;
+        ctx.fillStyle = on ? f.rgba(0.35 + 0.65 * (r / ROWS)) : f.rgba(0.08); // unlit dots stay faintly visible
+        ctx.beginPath();
+        ctx.arc(left + spacing * (c + 0.5), floor - r * rowGap, spacing * 0.22, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+  },
+});

@@ -1,0 +1,17 @@
+{
+  "name": "bnc-plugins",
+  "version": "1.0.0",
+  "description": "Shared plugins for the BNC apps: app colour styles (.bnctheme) and visualizers (.bncvis).",
+  "license": "MIT",
+  "author": "BNC",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pack": "node tools/pack-theme.mjs --all",
+    "validate": "node tools/validate-themes.mjs",
+    "check": "node tools/pack-theme.mjs --check && node tools/validate-themes.mjs"
+  },
+  "devDependencies": {
+    "jszip": "^3.10.2"
+  }
+}

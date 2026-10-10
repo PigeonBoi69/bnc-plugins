@@ -1,0 +1,7 @@
+* text=auto
+*.mjs text eol=lf
+*.json text eol=lf
+
+# packed plugins and pictures are binary: never touch them
+*.bnctheme binary
+*.png binary
