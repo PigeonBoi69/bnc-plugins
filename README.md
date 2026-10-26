@@ -23,6 +23,12 @@ Everything here is MIT licensed, icons included. Plugins contain **no code** (st
 | Brown | `brown.bnctheme` | `#c28a58` |
 | Black | `black.bnctheme` | `#d4d4d8` |
 | Grey | `grey.bnctheme` | `#9ca3af` |
+| Teal | `teal.bnctheme` | `#14b8a6` |
+| Cyan | `cyan.bnctheme` | `#22d3ee` |
+| Indigo | `indigo.bnctheme` | `#6366f1` |
+| Magenta | `magenta.bnctheme` | `#d946ef` |
+| Lime | `lime.bnctheme` | `#a3e635` |
+| Coral | `coral.bnctheme` | `#ff7a59` |
 
 Each style covers `bnc-ambient`, `bnc-docs`, `bnc-presentation`, `bnc-sheets` and `bnc-pdf`.
 
