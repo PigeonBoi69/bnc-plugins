@@ -7,7 +7,7 @@ Shared plugins for the BNC apps ([BNC Docs](https://github.com/PigeonBoi69/bnc-d
 
 Everything here is MIT licensed, icons included. Plugins contain **no code** (styles are just colours and pictures); visualizers run in a sandbox inside BNC Ambient.
 
-![All ten styles with the icon for each app](docs/preview.png)
+![All the styles with the icon for each app](docs/preview.png)
 
 ## App styles
 
@@ -29,6 +29,11 @@ Everything here is MIT licensed, icons included. Plugins contain **no code** (st
 | Magenta | `magenta.bnctheme` | `#d946ef` |
 | Lime | `lime.bnctheme` | `#a3e635` |
 | Coral | `coral.bnctheme` | `#ff7a59` |
+| Navy | `navy.bnctheme` | `#4a68c4` |
+| Maroon | `maroon.bnctheme` | `#c2314b` |
+| Mint | `mint.bnctheme` | `#8de8c0` |
+| Sky | `sky.bnctheme` | `#7dd3fc` |
+| White | `white.bnctheme` | `#f4f4f5` |
 
 Each style covers `bnc-ambient`, `bnc-docs`, `bnc-presentation`, `bnc-sheets` and `bnc-pdf`.
 

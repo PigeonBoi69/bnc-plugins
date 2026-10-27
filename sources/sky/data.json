@@ -1,0 +1,34 @@
+{
+  "id": "sample.sky",
+  "name": "Sky (sample)",
+  "version": "1.0.0",
+  "author": "BNC",
+  "type": "theme",
+  "apiVersion": 1,
+  "description": "Light pastel sky blue. A sample style for BNC Ambient, BNC Docs, BNC Presentation, BNC Sheets and BNC PDF: it recolors the app and changes the app icon.",
+  "colors": {
+    "accent": "#7dd3fc",
+    "accentInk": "#04283a",
+    "swatch": [
+      "#bae6fd",
+      "#2f84b0"
+    ]
+  },
+  "apps": {
+    "bnc-ambient": {
+      "icon": "bnc-ambient/icon.png"
+    },
+    "bnc-docs": {
+      "icon": "bnc-docs/icon.png"
+    },
+    "bnc-presentation": {
+      "icon": "bnc-presentation/icon.png"
+    },
+    "bnc-sheets": {
+      "icon": "bnc-sheets/icon.png"
+    },
+    "bnc-pdf": {
+      "icon": "bnc-pdf/icon.png"
+    }
+  }
+}
