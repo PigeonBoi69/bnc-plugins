@@ -1,11 +1,11 @@
 {
   "id": "sample.blue",
   "name": "Blue (sample)",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "author": "BNC",
   "type": "theme",
   "apiVersion": 1,
-  "description": "Bright blue and navy. A sample style for BNC Ambient, BNC Docs, BNC Presentation, BNC Sheets and BNC PDF: it recolors the app and changes the app icon.",
+  "description": "Bright blue and navy. A sample style for BNC Ambient, BNC Docs, BNC Presentation, BNC Sheets, BNC PDF, BNC Draw and BNC WiFi: it recolors the app and changes the app icon.",
   "colors": {
     "accent": "#3b82f6",
     "accentInk": "#ffffff",
@@ -29,6 +29,12 @@
     },
     "bnc-pdf": {
       "icon": "bnc-pdf/icon.png"
+    },
+    "bnc-draw": {
+      "icon": "bnc-draw/icon.png"
+    },
+    "bnc-wifi": {
+      "icon": "bnc-wifi/icon.png"
     }
   }
 }

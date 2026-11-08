@@ -1,6 +1,6 @@
 # BNC Plugins
 
-Shared plugins for the BNC apps ([BNC Docs](https://github.com/PigeonBoi69/bnc-docs), BNC Presentation, BNC Sheets, BNC PDF and BNC Ambient):
+Shared plugins for the BNC apps ([BNC Docs](https://github.com/PigeonBoi69/bnc-docs), BNC Presentation, BNC Sheets, BNC PDF, BNC Draw, BNC WiFi and BNC Ambient):
 
 - **App styles (`.bnctheme`)** recolor an app and change its icon. One file carries the look for **all** the BNC apps, each with its own icon.
 - **Visualizers (`.bncvis`)** are animated styles for BNC Ambient only.
@@ -24,7 +24,7 @@ Everything here is MIT licensed, icons included. Plugins contain **no code** (st
 | Black | `black.bnctheme` | `#d4d4d8` |
 | Grey | `grey.bnctheme` | `#9ca3af` |
 
-Each style covers `bnc-ambient`, `bnc-docs`, `bnc-presentation`, `bnc-sheets` and `bnc-pdf`.
+Each style covers `bnc-ambient`, `bnc-docs`, `bnc-presentation`, `bnc-sheets`, `bnc-pdf`, `bnc-draw` and `bnc-wifi`.
 
 ### Install
 

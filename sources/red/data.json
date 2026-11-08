@@ -1,11 +1,11 @@
 {
   "id": "sample.red",
   "name": "Red (sample)",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "author": "BNC",
   "type": "theme",
   "apiVersion": 1,
-  "description": "Red and dark red. A sample style for BNC Ambient, BNC Docs, BNC Presentation, BNC Sheets and BNC PDF: it recolors the app and changes the app icon.",
+  "description": "Red and dark red. A sample style for BNC Ambient, BNC Docs, BNC Presentation, BNC Sheets, BNC PDF, BNC Draw and BNC WiFi: it recolors the app and changes the app icon.",
   "colors": {
     "accent": "#ff4d5a",
     "accentInk": "#2a0508",
@@ -29,6 +29,12 @@
     },
     "bnc-pdf": {
       "icon": "bnc-pdf/icon.png"
+    },
+    "bnc-draw": {
+      "icon": "bnc-draw/icon.png"
+    },
+    "bnc-wifi": {
+      "icon": "bnc-wifi/icon.png"
     }
   }
 }

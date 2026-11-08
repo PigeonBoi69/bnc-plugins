@@ -1,11 +1,11 @@
 {
   "id": "sample.green",
   "name": "Green (sample)",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "author": "BNC",
   "type": "theme",
   "apiVersion": 1,
-  "description": "Green and dark green. A sample style for BNC Ambient, BNC Docs, BNC Presentation, BNC Sheets and BNC PDF: it recolors the app and changes the app icon.",
+  "description": "Green and dark green. A sample style for BNC Ambient, BNC Docs, BNC Presentation, BNC Sheets, BNC PDF, BNC Draw and BNC WiFi: it recolors the app and changes the app icon.",
   "colors": {
     "accent": "#3ddc84",
     "accentInk": "#04210f",
@@ -29,6 +29,12 @@
     },
     "bnc-pdf": {
       "icon": "bnc-pdf/icon.png"
+    },
+    "bnc-draw": {
+      "icon": "bnc-draw/icon.png"
+    },
+    "bnc-wifi": {
+      "icon": "bnc-wifi/icon.png"
     }
   }
 }

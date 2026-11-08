@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const HEX = /^#[0-9a-f]{6}$/i;
-const APPS = ['bnc-ambient', 'bnc-docs', 'bnc-presentation', 'bnc-sheets', 'bnc-pdf']; // apps every style here is expected to cover
+const APPS = ['bnc-ambient', 'bnc-docs', 'bnc-presentation', 'bnc-sheets', 'bnc-pdf', 'bnc-draw', 'bnc-wifi']; // apps every style here is expected to cover
 
 const pngSize = (b) => (b.length > 24 && b.readUInt32BE(0) === 0x89504e47 ? { w: b.readUInt32BE(16), h: b.readUInt32BE(20) } : null);
 
